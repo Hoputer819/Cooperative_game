@@ -4,22 +4,42 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     [Header("이동 설정")]
-    public float moveSpeed = 1.5f;
-    public float jumpHeight = 3f;
+    public float moveSpeed = 3f;
+    public float jumpHeight = 5f;
 
     [Header("바닥 체크 설정")]
     public Transform groundCheck;
     public float groundCheckRadius = 0.05f;
     public LayerMask groundLayer;
 
+    private PlayerInput playerInput;
+    private InputAction crouchAction;
+    public Vector2 originalSize;
+    public Vector2 originalOffset;
+    private bool isCrouching;
+
+    private float leftScreen;
+    private float rightScreen;
+    private float halfBody;
+    private float clampedX;
+
     private Vector2 moveInput;
     private Rigidbody2D rb;
+    private CapsuleCollider2D col;
     private bool isGrounded;
     private float jumpCooltime = 0f;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        col = GetComponent<CapsuleCollider2D>();
+        playerInput = GetComponent<PlayerInput>();
+        crouchAction = playerInput.actions["Crouch"];
+
+        originalOffset = col.offset;
+        originalSize = col.size;
+
+        halfBody = (originalSize.x / 2) * 3;
     }
 
     private void Update()
@@ -32,8 +52,14 @@ public class Player : MonoBehaviour
         else
         {
             isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        }       
- }
+        }
+
+        bool wantCrouch = crouchAction.IsPressed();
+        if(wantCrouch != isCrouching)
+        {
+            SetCrouch(wantCrouch);
+        }
+    }
 
     public void OnMove(InputValue value)
     {
@@ -42,15 +68,49 @@ public class Player : MonoBehaviour
 
     public void OnJump(InputValue value)
     {
-
         if (value.isPressed == true && isGrounded) {
             rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, jumpHeight);
             jumpCooltime = 0.52f;
         }
     }
 
+    public void SetCrouch(bool crouch)
+    {
+        isCrouching = crouch;
+
+        if (crouch)
+        {
+            Debug.Log("앉았다");
+            col.offset = new Vector2(originalOffset.x, originalOffset.y - originalSize.y / 4);
+            col.size = new Vector2(originalSize.x / 2, originalSize.y / 2);
+        }
+
+        else
+        {
+            Debug.Log("일어섰다");
+            col.offset = originalOffset;
+            col.size = originalSize;
+        }
+    }
+
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
+        leftScreen = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, 0)).x;
+        rightScreen = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, 0)).x;
+
+        float max = rightScreen - halfBody;
+        float min = leftScreen + halfBody;
+
+        float moveX = moveInput.x * moveSpeed;
+
+        if (rb.position.x >= max && moveX > 0)
+            moveX = 0;
+        if (rb.position.x <= min && moveX < 0)
+            moveX = 0;
+
+        rb.linearVelocity = new Vector2(moveX, rb.linearVelocity.y);
+
+        clampedX = Mathf.Clamp(rb.position.x, min, max);
+        rb.position = new Vector2(clampedX, rb.position.y);
     }
 }
