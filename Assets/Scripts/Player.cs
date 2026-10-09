@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        col = GetComponent<CapsuleCollider2D>();
+        col = GetComponent <CapsuleCollider2D>();
         playerInput = GetComponent<PlayerInput>();
         crouchAction = playerInput.actions["Crouch"];
 
