@@ -19,14 +19,6 @@ public class Trash : MonoBehaviour
         rb.linearVelocity = Vector2.left * speed;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.gameObject.name == "Player")
-        {
-            Time.timeScale = 0f;
-        }
-    }
-
     void Update()
     {
         if (rb.position.x <= -5.5f)

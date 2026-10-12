@@ -29,6 +29,8 @@ public class Player : MonoBehaviour
     private bool isGrounded;
     private float jumpCooltime = 0f;
 
+    public Timer timer;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -58,6 +60,20 @@ public class Player : MonoBehaviour
         if(wantCrouch != isCrouching)
         {
             SetCrouch(wantCrouch);
+        }
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.name == "Trash")
+        {
+            Time.timeScale = 0f;
+        }
+
+        else if(other.gameObject.name == "Poop")
+        {
+            Time.timeScale = 0f;
         }
     }
 
