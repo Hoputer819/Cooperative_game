@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -8,18 +9,23 @@ public class Timer : MonoBehaviour
     public float time = 0f;
     private int seconds;
     private int minuites;
-    private bool saved = false;
+    int count;
+
+    void Start()
+    {
+        Time.timeScale = 1f;
+    }
 
     void Update()
     {
         if (Time.timeScale == 0f)
         {
-            if (!saved)
-            {
-                PlayerPrefs.SetFloat("FinalTime", time);
-                saved = true;
-            }
-            return;
+            count = PlayerPrefs.GetInt("count", 0);
+            PlayerPrefs.SetFloat("Time"+count, time);
+            PlayerPrefs.SetInt("count", count + 1);
+            PlayerPrefs.Save();
+
+            SceneManager.LoadScene("EndScene");
         }
 
         time += Time.deltaTime;

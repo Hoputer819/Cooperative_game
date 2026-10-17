@@ -64,19 +64,6 @@ public class Player : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.name == "Trash")
-        {
-            Time.timeScale = 0f;
-        }
-
-        else if(other.gameObject.name == "Poop")
-        {
-            Time.timeScale = 0f;
-        }
-    }
-
     public void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();

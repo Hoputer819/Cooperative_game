@@ -1,5 +1,3 @@
-using System.Data;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Trash : MonoBehaviour
@@ -17,6 +15,15 @@ public class Trash : MonoBehaviour
     void Start()
     {
         rb.linearVelocity = Vector2.left * speed;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.name == "Player")
+        {
+            Time.timeScale = 0f;
+        }
+
     }
 
     void Update()

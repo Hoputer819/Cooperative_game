@@ -19,7 +19,12 @@ public class Poop : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.name == "Ground")
+        if (other.gameObject.name == "Player")
+        {
+            Time.timeScale = 0f;
+        }
+
+        else if (other.gameObject.name == "Ground")
         {
             Destroy(gameObject);
         }
