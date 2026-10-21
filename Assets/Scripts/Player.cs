@@ -71,6 +71,8 @@ public class Player : MonoBehaviour
 
     public void OnJump(InputValue value)
     {
+        if (isCrouching) return;
+
         if (value.isPressed == true && isGrounded) {
             rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, jumpHeight);
             jumpCooltime = 0.52f;
@@ -79,13 +81,13 @@ public class Player : MonoBehaviour
 
     public void SetCrouch(bool crouch)
     {
-        isCrouching = crouch;
 
         if (crouch)
         {
             Debug.Log("앉았다");
             col.offset = new Vector2(originalOffset.x, originalOffset.y - originalSize.y / 4);
             col.size = new Vector2(originalSize.x / 2, originalSize.y / 2);
+            isCrouching = true;
         }
 
         else
@@ -93,6 +95,7 @@ public class Player : MonoBehaviour
             Debug.Log("일어섰다");
             col.offset = originalOffset;
             col.size = originalSize;
+            isCrouching = false;
         }
     }
 
@@ -103,6 +106,15 @@ public class Player : MonoBehaviour
 
         float max = rightScreen - halfBody;
         float min = leftScreen + halfBody;
+
+        if (isCrouching)
+        {
+            moveSpeed = 1f;
+        }
+        else
+        {
+            moveSpeed = 3f;
+        }
 
         float moveX = moveInput.x * moveSpeed;
 

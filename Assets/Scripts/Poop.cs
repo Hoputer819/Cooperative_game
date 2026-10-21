@@ -14,14 +14,20 @@ public class Poop : MonoBehaviour
 
     void Start()
     {
+        speed = 2f + Mathf.Log(1 + Time.timeSinceLevelLoad * 0.1f);
         rb.linearVelocity = Vector2.down * speed;
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name == "Player")
         {
-            Time.timeScale = 0f;
+            PlayerPrefs.SetInt("Life", PlayerPrefs.GetInt("Life") - 1);
+
+            if (PlayerPrefs.GetInt("Life") < 1)
+            {
+                Time.timeScale = 0f;
+            }
         }
 
         else if (other.gameObject.name == "Ground")
@@ -29,4 +35,6 @@ public class Poop : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+
 }

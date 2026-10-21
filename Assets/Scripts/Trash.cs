@@ -21,7 +21,12 @@ public class Trash : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            Time.timeScale = 0f;
+            PlayerPrefs.SetInt("Life", PlayerPrefs.GetInt("Life") - 1);
+
+            if (PlayerPrefs.GetInt("Life") < 1)
+            {
+                Time.timeScale = 0f;
+            }
         }
 
     }

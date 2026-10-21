@@ -17,6 +17,8 @@ public class PoopSpawner : MonoBehaviour
             Instantiate(poopPrefab, new Vector2(randomX, 3.3f), Quaternion.identity);
 
             timer = 0f;
+
+            timeInterval = 2f - Mathf.Log(1 + Time.timeSinceLevelLoad * 0.05f);
         }
     }
 }
