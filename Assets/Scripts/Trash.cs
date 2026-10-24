@@ -22,6 +22,7 @@ public class Trash : MonoBehaviour
         if (other.gameObject.name == "Player")
         {
             PlayerPrefs.SetInt("Life", PlayerPrefs.GetInt("Life") - 1);
+            Destroy(gameObject);
 
             if (PlayerPrefs.GetInt("Life") < 1)
             {

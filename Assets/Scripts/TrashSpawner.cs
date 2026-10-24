@@ -4,7 +4,7 @@ public class TrashSpawner : MonoBehaviour
 {
     public GameObject trashPrefab;
     private float randomY;
-    private float[] yPos = { -1.708984f, -1.45f};
+    private float[] yPos = { -1.65f, -1.0f};
     private float timeInterval = 3f;
     private float timer = 0f;
 

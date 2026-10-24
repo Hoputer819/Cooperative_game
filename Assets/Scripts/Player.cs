@@ -30,12 +30,14 @@ public class Player : MonoBehaviour
     private float jumpCooltime = 0f;
 
     public Timer timer;
+    Animator anim;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent <CapsuleCollider2D>();
         playerInput = GetComponent<PlayerInput>();
+        anim = GetComponent<Animator>();
         crouchAction = playerInput.actions["Crouch"];
 
         originalOffset = col.offset;
@@ -73,7 +75,8 @@ public class Player : MonoBehaviour
     {
         if (isCrouching) return;
 
-        if (value.isPressed == true && isGrounded) {
+        if (value.isPressed == true && isGrounded && anim.GetCurrentAnimatorStateInfo(0).IsName("Walk")) {
+            anim.SetTrigger("Jump");
             rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, jumpHeight);
             jumpCooltime = 0.52f;
         }
@@ -85,6 +88,7 @@ public class Player : MonoBehaviour
         if (crouch)
         {
             Debug.Log("앉았다");
+            anim.SetBool("IsCrouching", crouch);
             col.offset = new Vector2(originalOffset.x, originalOffset.y - originalSize.y / 4);
             col.size = new Vector2(originalSize.x / 2, originalSize.y / 2);
             isCrouching = true;
@@ -93,6 +97,7 @@ public class Player : MonoBehaviour
         else
         {
             Debug.Log("일어섰다");
+            anim.SetBool("IsCrouching", crouch);
             col.offset = originalOffset;
             col.size = originalSize;
             isCrouching = false;

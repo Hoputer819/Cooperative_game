@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: 9183ea0aeef0cff42ade2d307746e37d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4537085057538600419
+    second: PoopAttacked_0
+  - first:
+      213: 2731864820212134651
+    second: PoopAttacked_1
+  - first:
+      213: 7766560682532984460
+    second: PoopAttacked_2
+  - first:
+      213: -3270243796492552888
+    second: PoopAttacked_3
+  - first:
+      213: 8557855594129729770
+    second: PoopAttacked_4
+  - first:
+      213: 1515004229216678976
+    second: PoopAttacked_5
+  - first:
+      213: 8747343835990535731
+    second: PoopAttacked_6
+  - first:
+      213: 7699295857635251697
+    second: PoopAttacked_7
+  - first:
+      213: -3391927192121867386
+    second: PoopAttacked_8
+  - first:
+      213: 4318661289962412707
+    second: PoopAttacked_9
+  - first:
+      213: -7223768182654475969
+    second: PoopAttacked_10
+  - first:
+      213: 680529897101082934
+    second: PoopAttacked_11
+  - first:
+      213: 1354026596662377104
+    second: PoopAttacked_12
+  - first:
+      213: -3291327274311791408
+    second: PoopAttacked_13
+  - first:
+      213: 7945046034162158533
+    second: PoopAttacked_14
+  - first:
+      213: 499713470402933683
+    second: PoopAttacked_15
+  - first:
+      213: 7663259934150890818
+    second: PoopAttacked_16
+  - first:
+      213: -8245628521134165702
+    second: PoopAttacked_17
+  - first:
+      213: -6113736014150306111
+    second: PoopAttacked_18
+  - first:
+      213: 3085159728301183613
+    second: PoopAttacked_19
+  - first:
+      213: -6790418070944552142
+    second: PoopAttacked_20
+  - first:
+      213: -2798646672163353155
+    second: PoopAttacked_21
+  - first:
+      213: 2486702426855999001
+    second: PoopAttacked_22
+  - first:
+      213: 5677906005825131571
+    second: PoopAttacked_23
+  - first:
+      213: 3699920900899048058
+    second: PoopAttacked_24
+  - first:
+      213: 1511392545590325618
+    second: PoopAttacked_25
+  - first:
+      213: -8427845035774232754
+    second: PoopAttacked_26
+  - first:
+      213: -8150304344703981971
+    second: PoopAttacked_27
+  - first:
+      213: -3048930254655560922
+    second: PoopAttacked_28
+  - first:
+      213: -4264338685439568983
+    second: PoopAttacked_29
+  - first:
+      213: 6103913643820939258
+    second: PoopAttacked_30
+  - first:
+      213: -8643129932286405140
+    second: PoopAttacked_31
+  - first:
+      213: -5865952277441648806
+    second: PoopAttacked_32
+  - first:
+      213: 7538552352226242993
+    second: PoopAttacked_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PoopAttacked_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1227
+        height: 1218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12ddadbd290901c0800000000000000
+      internalID: -4537085057538600419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_1
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1092
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf27127749889e520800000000000000
+      internalID: 2731864820212134651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_2
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1106
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c86d4e0bacd58cb60800000000000000
+      internalID: 7766560682532984460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_3
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1095
+        width: 138
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 845f225f792cd92d0800000000000000
+      internalID: -3270243796492552888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_4
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 728
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae82137425c93c670800000000000000
+      internalID: 8557855594129729770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_5
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 576
+        width: 162
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 044bca3d150660510800000000000000
+      internalID: 1515004229216678976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_6
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 592
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33e2b689fdec46970800000000000000
+      internalID: 8747343835990535731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_7
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 560
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f55cf63ac469da60800000000000000
+      internalID: 7699295857635251697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_8
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 403
+        width: 159
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6838691a0347de0d0800000000000000
+      internalID: -3391927192121867386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_9
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 544
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa907ddf87feeb30800000000000000
+      internalID: 4318661289962412707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_10
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 537
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f316c1d6c1500cb90800000000000000
+      internalID: -7223768182654475969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_11
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 540
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6314eb7f55ab17900800000000000000
+      internalID: 680529897101082934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_12
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 424
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09afd7604087ac210800000000000000
+      internalID: 1354026596662377104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_13
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 409
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc471f384bd252d0800000000000000
+      internalID: -3291327274311791408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_14
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 385
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cb8c5ef549724e60800000000000000
+      internalID: 7945046034162158533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_15
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 385
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b338d4f0c65fe600800000000000000
+      internalID: 499713470402933683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_16
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 373
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2451c84fe4e595a60800000000000000
+      internalID: 7663259934150890818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_17
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 361
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31f7f71c84a19d80800000000000000
+      internalID: -8245628521134165702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_18
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 319
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c6fe02bc75a72ba0800000000000000
+      internalID: -6113736014150306111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_19
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 361
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d729bb05d60b0da20800000000000000
+      internalID: 3085159728301183613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_20
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 358
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23be4fcddb693c1a0800000000000000
+      internalID: -6790418070944552142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_21
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 195
+        width: 156
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbdcfd5fda53929d0800000000000000
+      internalID: -2798646672163353155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_22
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 343
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9168ade9eaa828220800000000000000
+      internalID: 2486702426855999001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_23
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 347
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3349341fd69fbce40800000000000000
+      internalID: 5677906005825131571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_24
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 310
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a8123d472c85330800000000000000
+      internalID: 3699920900899048058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_25
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 272
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271b514338b89f410800000000000000
+      internalID: 1511392545590325618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_26
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 295
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4733a4b7974a0b80800000000000000
+      internalID: -8427845035774232754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_27
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 271
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d66a892716d44ee80800000000000000
+      internalID: -8150304344703981971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_28
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 216
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623605a561600b5d0800000000000000
+      internalID: -3048930254655560922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_29
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 172
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a31b6c1f8602d4c0800000000000000
+      internalID: -4264338685439568983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_30
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 114
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af77b9f7e1575b450800000000000000
+      internalID: 6103913643820939258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_31
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 71
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5d58eae1f6d0880800000000000000
+      internalID: -8643129932286405140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_32
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 51
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5762b99b73f79ea0800000000000000
+      internalID: -5865952277441648806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoopAttacked_33
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 51
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b171236c615e9860800000000000000
+      internalID: 7538552352226242993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PoopAttacked_0: -4537085057538600419
+      PoopAttacked_1: 2731864820212134651
+      PoopAttacked_10: -7223768182654475969
+      PoopAttacked_11: 680529897101082934
+      PoopAttacked_12: 1354026596662377104
+      PoopAttacked_13: -3291327274311791408
+      PoopAttacked_14: 7945046034162158533
+      PoopAttacked_15: 499713470402933683
+      PoopAttacked_16: 7663259934150890818
+      PoopAttacked_17: -8245628521134165702
+      PoopAttacked_18: -6113736014150306111
+      PoopAttacked_19: 3085159728301183613
+      PoopAttacked_2: 7766560682532984460
+      PoopAttacked_20: -6790418070944552142
+      PoopAttacked_21: -2798646672163353155
+      PoopAttacked_22: 2486702426855999001
+      PoopAttacked_23: 5677906005825131571
+      PoopAttacked_24: 3699920900899048058
+      PoopAttacked_25: 1511392545590325618
+      PoopAttacked_26: -8427845035774232754
+      PoopAttacked_27: -8150304344703981971
+      PoopAttacked_28: -3048930254655560922
+      PoopAttacked_29: -4264338685439568983
+      PoopAttacked_3: -3270243796492552888
+      PoopAttacked_30: 6103913643820939258
+      PoopAttacked_31: -8643129932286405140
+      PoopAttacked_32: -5865952277441648806
+      PoopAttacked_33: 7538552352226242993
+      PoopAttacked_4: 8557855594129729770
+      PoopAttacked_5: 1515004229216678976
+      PoopAttacked_6: 8747343835990535731
+      PoopAttacked_7: 7699295857635251697
+      PoopAttacked_8: -3391927192121867386
+      PoopAttacked_9: 4318661289962412707
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
