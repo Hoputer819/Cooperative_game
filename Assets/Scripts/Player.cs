@@ -87,7 +87,6 @@ public class Player : MonoBehaviour
 
         if (crouch)
         {
-            Debug.Log("앉았다");
             anim.SetBool("IsCrouching", crouch);
             col.offset = new Vector2(originalOffset.x, originalOffset.y - originalSize.y / 4);
             col.size = new Vector2(originalSize.x / 2, originalSize.y / 2);
@@ -96,7 +95,6 @@ public class Player : MonoBehaviour
 
         else
         {
-            Debug.Log("일어섰다");
             anim.SetBool("IsCrouching", crouch);
             col.offset = originalOffset;
             col.size = originalSize;

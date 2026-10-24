@@ -14,7 +14,15 @@ public class Trash : MonoBehaviour
 
     void Start()
     {
-        rb.linearVelocity = Vector2.left * speed;
+        if (transform.position.x > 0)
+        {
+            rb.linearVelocity = new Vector2(-speed, 0);
+        }
+
+        else
+        {
+            rb.linearVelocity = new Vector2(speed, 0);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -34,9 +42,14 @@ public class Trash : MonoBehaviour
 
     void Update()
     {
-        if (rb.position.x <= -5.5f)
+        if (rb.position.x <= -5.8f)
         {
-            Destroy(gameObject);
+                Destroy(gameObject);
+        }
+
+        else if(rb.position.x >= 5.8f)
+        {
+                Destroy(gameObject);
         }
     }
 }

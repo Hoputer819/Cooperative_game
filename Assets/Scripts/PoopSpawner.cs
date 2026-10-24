@@ -18,7 +18,7 @@ public class PoopSpawner : MonoBehaviour
 
             timer = 0f;
 
-            timeInterval = 2f - Mathf.Log(1 + Time.timeSinceLevelLoad * 0.05f);
+            timeInterval = 2f - Mathf.Clamp(Mathf.Log(1 + Time.timeSinceLevelLoad * 0.05f),0.9f,1.5f);
         }
     }
 }
