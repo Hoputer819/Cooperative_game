@@ -5,12 +5,7 @@ public class StartSceneManager : MonoBehaviour
 {
     public void OnClickStart()
     {
-        SceneManager.LoadScene("GameScene");
-    }
-
-    public void OnClickRanking()
-    {
-        SceneManager.LoadScene("RankingScene");
+        SceneManager.LoadScene("SelectScene");
     }
 
     public void OnClickExit()

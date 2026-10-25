@@ -25,7 +25,7 @@ public class Timer : MonoBehaviour
             PlayerPrefs.SetInt("count", count + 1);
             PlayerPrefs.Save();
 
-            SceneManager.LoadScene("EndScene");
+            SceneManager.LoadScene("PoopEndScene");
         }
 
         time += Time.deltaTime;

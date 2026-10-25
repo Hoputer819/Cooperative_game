@@ -30,7 +30,8 @@ public class Player : MonoBehaviour
     private float jumpCooltime = 0f;
 
     public Timer timer;
-    Animator anim;
+    private Animator anim;
+    private SpriteRenderer sr;
 
     private void Awake()
     {
@@ -38,6 +39,7 @@ public class Player : MonoBehaviour
         col = GetComponent <CapsuleCollider2D>();
         playerInput = GetComponent<PlayerInput>();
         anim = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
         crouchAction = playerInput.actions["Crouch"];
 
         originalOffset = col.offset;
@@ -69,6 +71,15 @@ public class Player : MonoBehaviour
     public void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
+
+        if(moveInput.x < 0)
+        {
+            sr.flipX = true;
+        }
+        else if(moveInput.x > 0)
+        {
+            sr.flipX = false;
+        }
     }
 
     public void OnJump(InputValue value)

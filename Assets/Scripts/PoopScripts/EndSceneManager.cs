@@ -5,12 +5,17 @@ public class EndSceneManager : MonoBehaviour
 {
     public void OnClickRetry()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("PoopGameScene");
     }
 
     public void OnClickRanking()
     {
         SceneManager.LoadScene("RankingScene");
+    }
+
+    public void OnClickHome()
+    {
+        SceneManager.LoadScene("StartScene");
     }
 
     public void OnClickExit()
