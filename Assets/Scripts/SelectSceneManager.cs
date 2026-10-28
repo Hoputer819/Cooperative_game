@@ -7,4 +7,9 @@ public class SelectSceneManager : MonoBehaviour
     {
         SceneManager.LoadScene("PoopGameScene");
     }
+
+    public void OnClickCampfire()
+    {
+        SceneManager.LoadScene("CampfireGameScene");
+    }
 }

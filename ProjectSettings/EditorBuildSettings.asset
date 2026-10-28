@@ -12,14 +12,17 @@ EditorBuildSettings:
     path: Assets/Scenes/SelectScene.unity
     guid: 321d3f1e2c6a05c49879088dd4a382c3
   - enabled: 1
-    path: Assets/Scenes/PoopGameScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
     path: Assets/Scenes/RankingScene.unity
     guid: bad9f589a9362a8438ccae162732fb8a
   - enabled: 1
+    path: Assets/Scenes/PoopGameScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
     path: Assets/Scenes/PoopEndScene.unity
     guid: ac8220993b57b0e4a9a320f1788b5020
+  - enabled: 1
+    path: Assets/Scenes/CampfireGameScene.unity
+    guid: ca8f0f64ff6ccf141ba00db10b988383
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
