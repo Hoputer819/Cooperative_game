@@ -11,11 +11,11 @@ public class RankingManager : MonoBehaviour
 
     void Start()
     {
-        int count = PlayerPrefs.GetInt("count", 0);
+        int count = PlayerPrefs.GetInt("PoopCount", 0);
 
         for(int i = 0; i < count; i++)
         {
-            timeList.Add(PlayerPrefs.GetFloat("Time" + i));
+            timeList.Add(PlayerPrefs.GetFloat("PoopTime" + i));
         
         }
         timeList.Sort();

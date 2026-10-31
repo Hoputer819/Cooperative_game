@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour
 {
 
     public TMP_Text timerText;
-    public float time = 0f;
+    private float time = 0f;
     private int seconds;
     private int minuites;
     int count;
@@ -20,9 +20,9 @@ public class Timer : MonoBehaviour
     {
         if (Time.timeScale == 0f)
         {
-            count = PlayerPrefs.GetInt("count", 0);
-            PlayerPrefs.SetFloat("Time"+count, time);
-            PlayerPrefs.SetInt("count", count + 1);
+            count = PlayerPrefs.GetInt("PoopCount", 0);
+            PlayerPrefs.SetFloat("PoopTime"+count, time);
+            PlayerPrefs.SetInt("PoopCount", count + 1);
             PlayerPrefs.Save();
 
             SceneManager.LoadScene("PoopEndScene");
