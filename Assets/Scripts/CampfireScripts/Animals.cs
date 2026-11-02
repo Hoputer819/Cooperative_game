@@ -1,7 +1,5 @@
-using System.Runtime.CompilerServices;
-using UnityEditorInternal;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
+
 
 public class Animals : MonoBehaviour
 {
@@ -11,7 +9,7 @@ public class Animals : MonoBehaviour
     private float[] yPos = {4.4f,-3f,3.2f,3.25f,-2f,-2f,0.5f,0.5f};//위,아,오위,왼위,오아,왼아,오
     private float[] xPos = {0f,0f,4.75f,-4.6f,4.75f,-4.75f,6.7f,-6.7f};
     private Vector2 target;
-
+    private bool PlayerInRange;
 
 
     void Start()
@@ -23,6 +21,30 @@ public class Animals : MonoBehaviour
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("HunterPlayer"))
+        {
+            PlayerInRange = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("HunterPlayer"))
+        {
+            PlayerInRange = false;
+        }
+    }
+
+    public void OnAttack()
+    {
+        if (PlayerInRange)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

@@ -42,7 +42,4 @@ public class HunterPlayer : MonoBehaviour
     {
         transform.position = new Vector2(-3.9f, 2f);
     }
-
-    
-
 }
