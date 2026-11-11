@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - HunterPlayer
+  - Animals
   layers:
   - Default
   - TransparentFX

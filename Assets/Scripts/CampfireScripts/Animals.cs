@@ -8,42 +8,27 @@ public class Animals : MonoBehaviour
 
     private float[] yPos = {4.4f,-3f,3.2f,3.25f,-2f,-2f,0.5f,0.5f};//위,아,오위,왼위,오아,왼아,오
     private float[] xPos = {0f,0f,4.75f,-4.6f,4.75f,-4.75f,6.7f,-6.7f};
-    private Vector2 target;
-    private bool PlayerInRange;
+    private Vector3 target;
+    float timer = 0;
 
 
     void Start()
     {
         int randomCount = PlayerPrefs.GetInt("RandomCount");
-        target = new Vector2(xPos[randomCount], yPos[randomCount]);
+        target = new Vector3(xPos[randomCount], yPos[randomCount],0);
     }
 
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("HunterPlayer"))
+        if(transform.position == target)
         {
-            PlayerInRange = true;
+            timer += Time.deltaTime;
         }
-    }
 
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("HunterPlayer"))
+        if(timer > 5)
         {
-            PlayerInRange = false;
-        }
-    }
-
-    public void OnAttack()
-    {
-        if (PlayerInRange)
-        {
-            Destroy(gameObject);
+            Time.timeScale = 0f;
         }
     }
 
