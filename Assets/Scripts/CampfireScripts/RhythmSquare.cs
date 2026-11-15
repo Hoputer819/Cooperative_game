@@ -4,7 +4,7 @@ public class RhythmSquare : MonoBehaviour
 {
     public GameObject blockPrefab;
     private float randomX;
-    private float[] xPos = {-2.68f,-2.23f,-1.78f,-1.33f};
+    private float[] xPos = {-2.735f,-2.255f,-1.755f,-1.275f};
     private float timeInterval = 3f;
     private float timer = 0f;
 

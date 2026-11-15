@@ -4,7 +4,7 @@ using UnityEngine;
 public class RhythmBlock : MonoBehaviour
 {
     [Header("지나가는 속도")]
-    public float speed = 3f;
+    public float speed = 1f;
 
     private Rigidbody2D rb;
 

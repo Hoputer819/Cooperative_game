@@ -200,6 +200,98 @@
             ]
         },
         {
+            "name": "Block",
+            "id": "68e50adf-0275-44a4-84e0-83003c08dd70",
+            "actions": [
+                {
+                    "name": "Up",
+                    "type": "Button",
+                    "id": "fb22775d-688a-4ec0-a07e-4298f8e7c1c3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Down",
+                    "type": "Button",
+                    "id": "b2b09c54-fd37-427b-a220-5aeed6bb9c6a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Left",
+                    "type": "Button",
+                    "id": "bf784f64-a8c9-44be-a4b3-2ddb2b4f00c0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Right",
+                    "type": "Button",
+                    "id": "63be9f1d-d34c-4975-9ec1-d8e646dc6b0e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "aa85f34c-fa4d-407c-a5c5-ad03b5a36f1a",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard2;Keyboard&Mouse2",
+                    "action": "Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a8168f08-961b-41b1-b5ff-360e5be70878",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard2;Keyboard&Mouse2",
+                    "action": "Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aae0caf9-ca1e-49f6-a586-75d569ea0441",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard2;Keyboard&Mouse2",
+                    "action": "Left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "01b62818-f3ed-41c5-b866-d39c4d4bd586",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard2;Keyboard&Mouse2",
+                    "action": "Right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
             "name": "UI",
             "id": "272f6d14-89ba-496f-b7ff-215263d3219f",
             "actions": [
@@ -786,6 +878,11 @@
                     "isOR": false
                 }
             ]
+        },
+        {
+            "name": "Keyboard&Mouse2",
+            "bindingGroup": "Keyboard&Mouse2",
+            "devices": []
         }
     ]
 }
