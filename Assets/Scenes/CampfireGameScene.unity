@@ -308,6 +308,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79533cffb5d3df43a66d3950414c8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RightBlock
+  isTrigger: 0
+  block: {fileID: 0}
 --- !u!61 &147587294
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -459,6 +461,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e436bdb8d658f743a9d8194f359077b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LeftBlock
+  isTrigger: 0
+  block: {fileID: 0}
 --- !u!61 &500891232
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2467,6 +2471,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96b45261d0f02a40adc2e2c66a76274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpBlock
+  isTrigger: 0
+  block: {fileID: 0}
 --- !u!61 &1863561448
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3404,6 +3410,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c68488fe16365f3408438525d5370212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DownBlock
+  isTrigger: 0
+  block: {fileID: 0}
 --- !u!61 &2119928581
 BoxCollider2D:
   m_ObjectHideFlags: 0
