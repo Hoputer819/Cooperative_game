@@ -7,7 +7,7 @@ TagManager:
   - Ground
   - HunterPlayer
   - Animals
-  - RythmBlock
+  - RhythmBlock
   layers:
   - Default
   - TransparentFX

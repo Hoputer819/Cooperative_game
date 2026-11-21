@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 147587290}
   - component: {fileID: 147587291}
   - component: {fileID: 147587294}
-  - component: {fileID: 147587292}
+  - component: {fileID: 147587295}
   m_Layer: 0
   m_Name: Right
   m_TagString: Untagged
@@ -296,20 +296,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &147587292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147587289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d79533cffb5d3df43a66d3950414c8d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RightBlock
-  isTrigger: 0
-  block: {fileID: 0}
 --- !u!61 &147587294
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -356,6 +342,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &147587295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147587289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34abcc6e91c31a544951d863e55e0caa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RightBlock
+  fanPlayer: {fileID: 1647990198}
 --- !u!1 &500891227
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,7 +366,7 @@ GameObject:
   - component: {fileID: 500891228}
   - component: {fileID: 500891229}
   - component: {fileID: 500891232}
-  - component: {fileID: 500891230}
+  - component: {fileID: 500891233}
   m_Layer: 0
   m_Name: Left
   m_TagString: Untagged
@@ -449,20 +448,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &500891230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 500891227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e436bdb8d658f743a9d8194f359077b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LeftBlock
-  isTrigger: 0
-  block: {fileID: 0}
 --- !u!61 &500891232
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -509,6 +494,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &500891233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500891227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 434a303b7d749b8428d56e7029448976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LeftBlock
+  fanPlayer: {fileID: 1647990198}
 --- !u!1 &628203510
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,8 +2009,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1647990195}
   - component: {fileID: 1647990194}
-  - component: {fileID: 1647990196}
-  - component: {fileID: 1647990197}
+  - component: {fileID: 1647990199}
+  - component: {fileID: 1647990198}
   m_Layer: 0
   m_Name: FanPlayer
   m_TagString: Untagged
@@ -2096,7 +2094,23 @@ Transform:
   - {fileID: 2001327339}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1647990196
+--- !u!114 &1647990198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647990193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6cd5910cc38924a8d41a7adece9d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FanPlayer
+  up: 0
+  down: 0
+  left: 0
+  right: 0
+--- !u!114 &1647990199
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2121,23 +2135,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 1
+  m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse2
   m_DefaultActionMap: Block
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1647990197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647990193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3b003d7db2375543ae88c46be25a903, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FanPlayerManager
 --- !u!1 &1723664127
 GameObject:
   m_ObjectHideFlags: 0
@@ -2377,7 +2379,7 @@ GameObject:
   - component: {fileID: 1863561444}
   - component: {fileID: 1863561445}
   - component: {fileID: 1863561448}
-  - component: {fileID: 1863561446}
+  - component: {fileID: 1863561449}
   m_Layer: 0
   m_Name: Up
   m_TagString: Untagged
@@ -2459,20 +2461,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &1863561446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863561443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c96b45261d0f02a40adc2e2c66a76274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UpBlock
-  isTrigger: 0
-  block: {fileID: 0}
 --- !u!61 &1863561448
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2519,6 +2507,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1863561449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863561443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87c2dded27b34534da5fb6038fe29d31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpBlock
+  fanPlayer: {fileID: 1647990198}
 --- !u!1 &1965113281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3316,7 +3317,7 @@ GameObject:
   - component: {fileID: 2119928577}
   - component: {fileID: 2119928578}
   - component: {fileID: 2119928581}
-  - component: {fileID: 2119928579}
+  - component: {fileID: 2119928582}
   m_Layer: 0
   m_Name: Down
   m_TagString: Untagged
@@ -3398,20 +3399,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &2119928579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119928576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c68488fe16365f3408438525d5370212, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DownBlock
-  isTrigger: 0
-  block: {fileID: 0}
 --- !u!61 &2119928581
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3458,6 +3445,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2119928582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119928576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398c709d85a76e24db23045d77972d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DownBlock
+  fanPlayer: {fileID: 1647990198}
 --- !u!1 &2140484921
 GameObject:
   m_ObjectHideFlags: 0
