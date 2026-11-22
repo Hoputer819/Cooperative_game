@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimalsSpawner
   animalsPrefab: {fileID: 1192846109402236618, guid: 1a5eea2461c880949a9af2b4f4f289a6, type: 3}
+  campfire: {fileID: 1311534104}
 --- !u!4 &52158817
 Transform:
   m_ObjectHideFlags: 0
@@ -355,6 +356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RightBlock
   fanPlayer: {fileID: 1647990198}
+  obj: {fileID: 1311534104}
 --- !u!1 &500891227
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LeftBlock
   fanPlayer: {fileID: 1647990198}
+  obj: {fileID: 1311534104}
 --- !u!1 &628203510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,6 +1325,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1311534106}
   - component: {fileID: 1311534105}
+  - component: {fileID: 1311534107}
   m_Layer: 0
   m_Name: Campfire
   m_TagString: Untagged
@@ -1403,6 +1407,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1647990195}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1311534107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311534104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58b674b94fdf4934fa509e3b711dc59b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Campfire
 --- !u!1 &1439243618
 GameObject:
   m_ObjectHideFlags: 0
@@ -2520,6 +2536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpBlock
   fanPlayer: {fileID: 1647990198}
+  obj: {fileID: 1311534104}
 --- !u!1 &1965113281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3458,6 +3475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DownBlock
   fanPlayer: {fileID: 1647990198}
+  obj: {fileID: 1311534104}
 --- !u!1 &2140484921
 GameObject:
   m_ObjectHideFlags: 0

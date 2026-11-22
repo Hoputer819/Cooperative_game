@@ -3,6 +3,9 @@ using UnityEngine;
 public class AnimalsSpawner : MonoBehaviour
 {
     public GameObject animalsPrefab;
+    public GameObject campfire;
+    private int randomCounted = 8;
+    private int randomCount;
     private float randomX;
     private float randomY;
     private float[] yPos = { 6f, -6f, 6f, 6f, -6f, -6f, 0.5f, 0.5f };//위,아,오위,왼위,오아,왼아,오,왼
@@ -14,13 +17,18 @@ public class AnimalsSpawner : MonoBehaviour
 
     void Update()
     {
+        timeInterval = campfire.transform.localScale.x * 5;
+
         timer += Time.deltaTime;
 
         if (timer >= timeInterval)
         {
             count++;
             Debug.Log($"동물 소환됨{count}");
-            int randomCount = Random.Range(0, yPos.Length);
+            do{
+                randomCount = Random.Range(0, yPos.Length); 
+            }while (randomCounted == randomCount) ;
+            randomCounted = randomCount;
             randomY = yPos[randomCount];
             randomX = xPos[randomCount];
             PlayerPrefs.SetInt("RandomCount",randomCount);

@@ -205,42 +205,42 @@
             "actions": [
                 {
                     "name": "Up",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "fb22775d-688a-4ec0-a07e-4298f8e7c1c3",
-                    "expectedControlType": "",
+                    "expectedControlType": "Digital",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false,
+                    "initialStateCheck": true,
                     "priority": 0
                 },
                 {
                     "name": "Down",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "b2b09c54-fd37-427b-a220-5aeed6bb9c6a",
-                    "expectedControlType": "",
+                    "expectedControlType": "Digital",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false,
+                    "initialStateCheck": true,
                     "priority": 0
                 },
                 {
                     "name": "Left",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "bf784f64-a8c9-44be-a4b3-2ddb2b4f00c0",
-                    "expectedControlType": "",
+                    "expectedControlType": "Digital",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false,
+                    "initialStateCheck": true,
                     "priority": 0
                 },
                 {
                     "name": "Right",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "63be9f1d-d34c-4975-9ec1-d8e646dc6b0e",
-                    "expectedControlType": "",
+                    "expectedControlType": "Digital",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false,
+                    "initialStateCheck": true,
                     "priority": 0
                 }
             ],

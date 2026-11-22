@@ -3,7 +3,10 @@ using UnityEngine;
 public class Block : MonoBehaviour
 {
     protected bool isTrigger;
+    protected bool triggered;
     protected Collider2D collision;
+    protected float timer = 0;
+    protected float coolTime = 1;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -11,6 +14,7 @@ public class Block : MonoBehaviour
         {
             this.collision = collision;
             isTrigger = true;
+            triggered = true;
         }
     }
 

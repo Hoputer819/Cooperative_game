@@ -14,23 +14,28 @@ public class FanPlayer : MonoBehaviour
         playerInput.SwitchCurrentControlScheme("Keyboard&Mouse2", Keyboard.current, Mouse.current);
     }
 
+    void Update()
+    {
+
+    }
+
     public void OnUp(InputValue other)
     {
-        up = other.isPressed;
+        up = other.Get<float>() > 0.5f;
     }
 
     public void OnDown(InputValue other)
     {
-        down = other.isPressed;
+        down = other.Get<float>() > 0.5f;
     }
 
     public void OnLeft(InputValue other)
     {
-        left = other.isPressed;
+        left = other.Get<float>() > 0.5f;
     }
 
     public void OnRight(InputValue other)
     {
-        right = other.isPressed;
+        right = other.Get<float>() > 0.5f;
     }
 }
