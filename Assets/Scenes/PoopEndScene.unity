@@ -582,8 +582,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1377513782}
-        m_TargetAssemblyTypeName: EndSceneManager, Assembly-CSharp
+      - m_Target: {fileID: 1975429016}
+        m_TargetAssemblyTypeName: PoopEndSceneManager, Assembly-CSharp
         m_MethodName: OnClickRetry
         m_Mode: 1
         m_Arguments:
@@ -869,8 +869,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1377513782}
-        m_TargetAssemblyTypeName: EndSceneManager, Assembly-CSharp
+      - m_Target: {fileID: 1975429016}
+        m_TargetAssemblyTypeName: PoopEndSceneManager, Assembly-CSharp
         m_MethodName: OnClickRanking
         m_Mode: 1
         m_Arguments:
@@ -1193,50 +1193,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!1 &1377513780
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1377513781}
-  - component: {fileID: 1377513782}
-  m_Layer: 0
-  m_Name: EndSceneManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1377513781
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377513780}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.38301, y: 2.45241, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1377513782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377513780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fa62f449c29c3f4aabcfd06b35726e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EndSceneManager
 --- !u!1 &1432159308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,8 +1276,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1377513782}
-        m_TargetAssemblyTypeName: EndSceneManager, Assembly-CSharp
+      - m_Target: {fileID: 1975429016}
+        m_TargetAssemblyTypeName: PoopEndSceneManager, Assembly-CSharp
         m_MethodName: OnClickExit
         m_Mode: 1
         m_Arguments:
@@ -1453,8 +1409,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1377513782}
-        m_TargetAssemblyTypeName: EndSceneManager, Assembly-CSharp
+      - m_Target: {fileID: 1975429016}
+        m_TargetAssemblyTypeName: PoopEndSceneManager, Assembly-CSharp
         m_MethodName: OnClickHome
         m_Mode: 1
         m_Arguments:
@@ -1640,6 +1596,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931239335}
   m_CullTransparentMesh: 1
+--- !u!1 &1975429013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1975429015}
+  - component: {fileID: 1975429016}
+  m_Layer: 0
+  m_Name: PoopEndSceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1975429015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975429013}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1975429016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975429013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3660c5884fc5db84d9478d33d722627f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EndSceneManager
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1647,4 +1647,4 @@ SceneRoots:
   - {fileID: 1110434029}
   - {fileID: 368468542}
   - {fileID: 905840212}
-  - {fileID: 1377513781}
+  - {fileID: 1975429015}

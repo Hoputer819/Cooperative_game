@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class RankingManager : MonoBehaviour
+public class PoopRankingManager : MonoBehaviour
 {
     public GameObject scorePrefab;
     public Transform content;

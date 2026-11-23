@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EndSceneManager : MonoBehaviour
+public class CampfireEndSceneManager : MonoBehaviour
 {
     public void OnClickRetry()
     {
-        SceneManager.LoadScene("PoopGameScene");
+        SceneManager.LoadScene("CampfireGameScene");
     }
 
     public void OnClickRanking()
