@@ -9,7 +9,7 @@ public class DownBlock : Block
     {
         timer += Time.deltaTime;
 
-        if (fanPlayer.down && isTrigger)
+        if (fanPlayer.up && isTrigger)
         {
             coolTime = 100;
             if (obj.transform.localScale.x < 1f)

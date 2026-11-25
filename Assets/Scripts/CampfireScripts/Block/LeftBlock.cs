@@ -9,7 +9,7 @@ public class LeftBlock : Block
     {
         timer += Time.deltaTime;
 
-        if (fanPlayer.left && isTrigger)
+        if (fanPlayer.up && isTrigger)
         {
             coolTime = 100;
             if (obj.transform.localScale.x < 1f)

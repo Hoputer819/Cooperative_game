@@ -9,7 +9,7 @@ public class RightBlock : Block
     {
         timer += Time.deltaTime;
 
-        if (fanPlayer.right && isTrigger)
+        if (fanPlayer.up && isTrigger)
         {
             coolTime = 100;
             if (obj.transform.localScale.x < 1f)

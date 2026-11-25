@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Campfire : MonoBehaviour
+public class CampfireContainer : MonoBehaviour
 {
     private float timer = 0f;
     private float timeInterval = 2f;
